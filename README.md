@@ -7,5 +7,5 @@ Google Apps Scripts for the Google Sheets to get your JOYSOUND zenkoku-saiten-GP
 * Add a Script profile 'SHEET_NAME','USER_ID','DEFAULT_COUNT','DEFAULT_MONTH'. 'USER_ID' is shown in your utasuki-profile page URL.<br>
 * Fill the Scripts from this source code gphistory.gs and overwrite your own data. 
 * Make the Scripts as a Web application for POST request. 
-* Throw http POST request MONTH JSON data such as {"months":[{"month":"201801"}]}
+* Throw http POST request MONTH JSON data such as {"months":[{"month":"201801"}]} to the gphistory.gs's Web application URL.
 * Getting data showed in the sheet.
