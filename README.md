@@ -1,7 +1,7 @@
 # gphistory
 Google Apps Scripts for the Google Sheets to get your JOYSOUND zenkoku-saiten-GP data from the site.
-`
-JOYSOUDの全国採点GPの採点履歴を取得するGoogleスプレッドシート用のGoogle Apps Scriptです
+
+JOYSOUDの全国採点GPの採点履歴を取得するGoogleスプレッドシート用のGoogle Apps Scriptです。
 
 
 # Getting Started
