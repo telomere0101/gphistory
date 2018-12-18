@@ -2,6 +2,8 @@
 Google Apps Scripts for the Google Sheets to get your JOYSOUND zenkoku-saiten-GP data from the site.
 
 JOYSOUDの全国採点GPの採点履歴を取得するGoogleスプレッドシート用のGoogle Apps Scriptです。
+歌唱人数が100人以内の場合は正確な標準偏差を基に偏差値を計算できていますが、歌唱人数が100人以上の場合は標準偏差は「3」で近似して計算しています。
+基本的にユーザが自身の採点履歴をスプレッドシートに整理するために利用することを想定しています。
 
 
 # Getting Started
