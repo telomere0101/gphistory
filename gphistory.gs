@@ -19,6 +19,7 @@ function doPost(e) {
   
   messages = "{'selSongNos':[";
   
+  //全国採点GP採点履歴ページより履歴を取得
   for(var i in months){
     defaultMonth = months[i].month;
     var nowdate = new Date();
@@ -27,11 +28,11 @@ function doPost(e) {
       "Connection": "keep-alive",
       "Accept": "application/json, text/javascript, */*; q=0.01",
       "X-JSP-APP-NAME": "www.joysound.com",
-      "User-Agent": "Overwrite your web Browser's user-agent", //overwrite your own data
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36",
       "Referer": "https://www.joysound.com/utasuki/userpage/gp/index.htm?usr="+userId+"&month="+defaultMonth+"&startIndex=0&orderBy=0&sortOrder=asc",
       "Accept-Encoding": "gzip, deflate, br",
       "Accept-Language": "ja,en-US;q=0.9,en;q=0.8",
-      "Cookie":"Overwrite your Cookie data on Referer page" //overwrite your own data
+      "Cookie":"sp-access=true; _ga=GA1.2.1178563689.1524728043; optimizelyBuckets=%7B%7D; optimizelyEndUserId=oeu1526324470851r0.1498558574068578; optimizelySegments=%7B%224760320023%22%3A%22search%22%2C%224757440016%22%3A%22gc%22%2C%224751650021%22%3A%22false%22%7D; _JSPALFLG=true; _gid=GA1.2.1552642533.1526746396; _JSPALK=FoTur3c2MfnNeSmQ4QAxQZpkfzipbS8usXUtZeFAa0w; _gat_UA-3748042-19=1; _gat=1; jsp-access=true; NSC_wtw_vubtvlj-yhktdvtl_8080=ffffffffaf1bd48945525d5f4f58455e445a4a4229a0; NSC_wtw_qpsubm-yhktdqsu_8080=ffffffffaf1bd48245525d5f4f58455e445a4a4229a0; _JSPSID=t_Igue_yfsAKm8Isa_MAdDUjWT1TSIEU-yqiavUZ0Vo; _SJSPSID=khWTU3P4dXwZ7WRmVS1aIYw8ZoQ5fajbPd8RZavEk0g; _JSPALTKN=bsdyWR_sq_a4FLU1w7J7W8PFTw8yUSdb6Cj1NcunEDnIDrwM7E9p3JjJb29oHql_HKwdVNXQPJm9DP5_fcuxuw; NSC_wtw_ejtqbudifs-yhktdejq_8080=ffffffffaf1bd48845525d5f4f58455e445a4a4229a0; NSC_wtw_qpsubm-yhktdqsu_8080=ffffffffaf1bd48245525d5f4f58455e445a4a4229a0; NSC_wtw_ejtqbudifs-yhktdejq_8080=ffffffffaf1bd48845525d5f4f58455e445a4a4229a0; optimizelyPendingLogEvents=%5B%5D"
     };
     var options = {
       "method" : "get",
@@ -89,11 +90,11 @@ function doPost(e) {
         "Connection": "keep-alive",
         "Accept": "application/json, text/javascript, */*; q=0.01",
         "X-JSP-APP-NAME": "www.joysound.com",
-        "User-Agent": "Overwrite your web Browser's user-agent", //overwrite your own data
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36",
         "Referer": "https://www.joysound.com/web/joy/gp/popular/song?selSongNo="+selSongNo,
         "Accept-Encoding": "gzip, deflate, br",
         "Accept-Language": "ja,en-US;q=0.9,en;q=0.8",
-        "Cookie":"Overwrite your Cookie data on Referer page" //overwrite your own data
+        "Cookie":"jsp-access=true; _ga=GA1.2.1178563689.1524728043; optimizelyBuckets=%7B%7D; optimizelyEndUserId=oeu1526324470851r0.1498558574068578; optimizelySegments=%7B%224760320023%22%3A%22search%22%2C%224757440016%22%3A%22gc%22%2C%224751650021%22%3A%22false%22%7D; _gid=GA1.2.1552642533.1526746396; _JSPALK=yyag_3sv87pDj2xz74Leh0Yz2DBiFlsmTVZ4aOVJF9U; NSC_wtw_vubtvlj-yhktdvtl_8080=ffffffffaf1bd48945525d5f4f58455e445a4a4229a0; NSC_wtw_qpsubm-yhktdqsu_8080=ffffffffaf1bd48545525d5f4f58455e445a4a4229a0; _JSPSID=ske--t35pX6TQTzt7sw1nE47UVyuTb54Ssm7kGXY75A; _SJSPSID=TeY9sopMXSPBvzuOQ489eERd3IPsKGSltwS_rM7c-68; _gat_UA-3748042-19=1; NSC_wtw_ejtqbudifs-yhktdejq_8080=ffffffffaf1bd48b45525d5f4f58455e445a4a4229a0; jsp-access=true; NSC_wtw_ejtqbudifs-yhktdejq_8080=ffffffffaf1bd48b45525d5f4f58455e445a4a4229a0; NSC_wtw_qpsubm-yhktdqsu_8080=ffffffffaf1bd48545525d5f4f58455e445a4a4229a0; NSC_wtw_vubtvlj-yhktdvtl_8080=ffffffffaf1bd48945525d5f4f58455e445a4a4229a0; optimizelyPendingLogEvents=%5B%5D"
       };
       var options1 = {
         "method" : "get",
